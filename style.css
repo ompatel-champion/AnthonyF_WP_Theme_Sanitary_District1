@@ -2100,7 +2100,9 @@ span.su-spoiler-icon {
 	position: relative;
 	float: right !important;
 }
-
+.megamenu-list a {
+	text-align: center;
+}
 
 
 
