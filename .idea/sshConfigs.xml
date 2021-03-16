@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="sanitaryone.sftp.wpengine.com" id="530ae213-4925-4c6b-9cbb-2cab718a745f" port="2222" nameFormat="DESCRIPTIVE" username="sanitaryone-pascual" />
+    </configs>
+  </component>
+</project>

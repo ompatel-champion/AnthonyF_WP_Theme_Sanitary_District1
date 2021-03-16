@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d1d71bd3-41c2-45cf-a6cb-7f7a53c9ce20" name="sanitaryone.wpengine.com">
+        <fileTransfer accessType="SFTP" host="sanitaryone.sftp.wpengine.com" port="2222" sshConfigId="530ae213-4925-4c6b-9cbb-2cab718a745f" sshConfig="sanitaryone-pascual@sanitaryone.sftp.wpengine.com:2222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
