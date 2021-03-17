@@ -44,45 +44,60 @@
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo"><h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></a>
                         <div class="nav-toggle"></div>
                     </div>
-                    <div class="nav-menus-wrapper">
-                        <ul class="nav-menu align-to-right">
-                            <li><a href="#">Collection</a></li>
-                            <li><a href="#">Recycling</a>
-                                <div class="megamenu-panel">
-                                    <div class="megamenu-lists container">
-                                        <ul class="megamenu-list list-col-3">
-                                            <li>
-                                                <a href="#">
-                                                    <img src="https://sanitaryone.wpengine.com/wp-content/uploads/2021/03/garbage-truck-worker-scaled.jpg" alt="">
-                                                    About Us 1
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="megamenu-list list-col-3">
-                                            <li>
-                                                <a href="#">
-                                                    <img src="https://sanitaryone.wpengine.com/wp-content/uploads/2021/03/garbage-truck-worker-scaled.jpg" alt="">
-                                                    Coming Soon Layout 1
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="megamenu-list list-col-3">
-                                            <li>
-                                                <a href="#">
-                                                    <img src="https://sanitaryone.wpengine.com/wp-content/uploads/2021/03/garbage-truck-worker-scaled.jpg" alt="">
-                                                    Contact Layout 1
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="#">Inside SD1</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="/bulk-trash-pickup/" class="bulk-btn quick-links"><i class="fas fa-calendar-alt"></i> <span>Bulk <br>Pickup</span></a></li>
-                            <li><a href="#" class="pickup-btn quick-links"><i class="fas fa-search"></i> <span>Day of <br>Pickup</span></a></li>
-                        </ul>
+                    <div id="headerMainMenu" class="nav-menus-wrapper">
+                        <?php
+                        $args = array(
+                            'theme_location'  => 'primary',
+                            'container'       => 'div',
+                            'container_class' => 'nav-menus-wrapper',
+                            'container_id'    => 'headerMainMenu',
+                            'depth' => 0,
+                            'walker' => new WP_Bootstrap_Mega_Navwalker(),
+                            'menu_class'      => 'nav-menu align-to-right'
+                        );
+
+                        wp_nav_menu( $args );
+                        ?>
+
+
+                        <!--<ul class="nav-menu align-to-right">-->
+                        <!--		<li><a href="#">Collection</a></li>-->
+                        <!--		<li><a href="#">Recycling</a>-->
+                        <!--					<div class="megamenu-panel">-->
+                        <!--  					<div class="megamenu-lists container">-->
+                        <!--    						<ul class="megamenu-list list-col-3">-->
+                        <!--      						<li>-->
+                        <!--                                  <a href="#">-->
+                        <!--                                      <img src="https://sanitaryone.wpengine.com/wp-content/uploads/2021/03/garbage-truck-worker-scaled.jpg" alt="">-->
+                        <!--                                      About Us 1-->
+                        <!--                                  </a>-->
+                        <!--                              </li>-->
+                        <!--    						</ul>-->
+                        <!--    						<ul class="megamenu-list list-col-3">-->
+                        <!--      						<li>-->
+                        <!--                                  <a href="#">-->
+                        <!--                                      <img src="https://sanitaryone.wpengine.com/wp-content/uploads/2021/03/garbage-truck-worker-scaled.jpg" alt="">-->
+                        <!--                                      Coming Soon Layout 1-->
+                        <!--                                  </a>-->
+                        <!--                              </li>-->
+                        <!--    						</ul>-->
+                        <!--    						<ul class="megamenu-list list-col-3">-->
+                        <!--      						<li>-->
+                        <!--                                  <a href="#">-->
+                        <!--                                      <img src="https://sanitaryone.wpengine.com/wp-content/uploads/2021/03/garbage-truck-worker-scaled.jpg" alt="">-->
+                        <!--                                      Contact Layout 1-->
+                        <!--                                  </a>-->
+                        <!--                              </li>-->
+                        <!--    						</ul>-->
+                        <!--  					</div>-->
+                        <!--					</div>-->
+                        <!--		</li>-->
+                        <!--		<li><a href="#">Inside SD1</a></li>-->
+                        <!--		<li><a href="#">News</a></li>-->
+                        <!--		<li><a href="#">Support</a></li>-->
+                        <!--		<li><a href="/bulk-trash-pickup/" class="bulk-btn quick-links"><i class="fas fa-calendar-alt"></i> <span>Bulk <br>Pickup</span></a></li>-->
+                        <!--		<li><a href="#" class="pickup-btn quick-links"><i class="fas fa-search"></i> <span>Day of <br>Pickup</span></a></li>-->
+                        <!--	</ul>-->
                     </div>
                 </nav>
             </div>
